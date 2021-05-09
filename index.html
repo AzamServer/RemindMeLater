@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Remind Me Later </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Remind Me Later">
+    <meta name="application-name" content="Remind Me Later">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="mainpage.css" rel="stylesheet" type="text/css" />
+    <script src="/multiuseScripts/cookiePopup.js" async></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="brandNameMargin">
+      <a href="/">
+      <h2 style="float:left;"> REMIND ME LATER </h2>
+      </a>
+      <div>
+      <div class="rightAlign">
+      <button onclick="document.getElementById('id01').style.display='block'" style="font-size:12px;">Login or Register</button>
+      </div>
+      <br>
+      <br>
+    </div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate"   action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <label for="uname"><b><a style="color:white; font-family: 'Roboto', sans-serif;">Username</a></b></label>
+          <a style="color:black;">
+          <input type="text" placeholder="Enter Username" name="uname" required style="color:white; background-color:transparent; border-radius: 4px;">
+          <br>
+          <br>
+          <label for="psw"><b><a style="color:white; font-family: 'Roboto', sans-serif;">Password</a></b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required style="color:white; background-color:transparent; border-radius: 4px;">
+          <br>
+          <br>
+          <center>
+          <button type="submit" style="width:47%">Login</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" style="width:47%">Cancel</button>
+          <br>
+          <br>
+          <a style="float:right; color:white; font-family: 'Work Sans', serif;">
+          </center>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me </a>
+          </label>
+          </a>
+          <a style="color:white; font-family: 'Work Sans', serif;">Forgot <a href="#" style="color:white; font-family: 'Work Sans', serif;">password?</a></a>
+        </div>
+      </form>
+  </div>
+
+    <div class="body">
+      <center>
+      <a href="/january">
+      <button style="width:20%">JANUARY</button>
+      </a>
+      <a href="/february">
+      <button style="width:20%">FEBRUARY</button>
+      </a>
+      <a href="/march">
+      <button style="width:20%">MARCH</button>
+      </a>
+      <a href="/april">
+      <button style="width:20%">APRIL</button>
+      </a>
+      <br>
+      <a href="/may">
+      <button style="width:20%">MAY</button>
+      </a>
+      <a href="/june">
+      <button style="width:20%">JUNE</button>
+      </a>
+      <a href="/july">
+      <button style="width:20%">JULY</button>
+      </a>
+      <a href="/august">
+      <button style="width:20%">AUGUST</button>
+      </a>
+      <br>
+      <a href="/september">
+      <button style="width:20%">SEPTEMBER</button>
+      </a>
+      <a href="/october">
+      <button style="width:20%">OCTOBER</button>
+      </a>
+      <a href="/november">
+      <button style="width:20%">NOVEMBER</button>
+      </a>
+      <a href="/december">
+      <button style="width:20%">DECEMBER</button>
+      </a>
+      </center>
+    </div>
+
+    <div class="footer">
+      <br>
+      <hr>
+      <center>
+      <p>
+      <span id="datetime"></span>
+      <script src="/multiuseScripts/time.js"></script>
+      </p>
+      </center>
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,118 @@
+
+html {
+	background-color: #000000;
+	background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  height: 100%;
+}
+
+.brandNameMargin {
+  margin: 20px;
+}
+
+h2 {
+	color: white;
+  font-family: 'Montserrat', serif;
+  font-size: 26px;
+}
+
+.rightAlign{
+  text-align: right;
+}
+
+a {
+  color: transparent;
+}
+
+button {
+  --color: #00FFFF;
+	--hover: #00FFFF;
+	background: none;
+	border: 2px solid;
+  border-radius: 8px;
+	font-family: 'Work Sans', serif;
+  font-size: 14px;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+	color: var(--color);
+	transition: 0.25s;
+}
+
+button:hover, button:focus {
+	border-color: var(--hover);
+	color: #00FFFF;
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+
+.cookieConsentContainer {
+	z-index: 999;
+	width: 350px;
+	min-height: 20px;
+	box-sizing: border-box;
+	padding: 30px 30px 30px 30px;
+	background: #232323;
+	overflow: hidden;
+	position: fixed;
+  bottom: 30px;
+	right: 30px;
+	display: none;
+}
+
+.cookieConsentContainer .cookieTitle a {
+	font-family: OpenSans, arial, "sans-serif";
+	color: #FFFFFF;
+	font-size: 22px;
+	line-height: 20px;
+	display: block;
+}
+
+.cookieConsentContainer .cookieDesc p {
+	margin: 0;
+	padding: 0;
+	font-family: OpenSans, arial, "sans-serif";
+	color: #FFFFFF;
+	font-size: 13px;
+	line-height: 20px;
+	display: block;
+	margin-top: 10px;
+}
+
+.cookieConsentContainer .cookieDesc a {
+	font-family: OpenSans, arial, "sans-serif";
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieButton a {
+	display: inline-block;
+	font-family: OpenSans, arial, "sans-serif";
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 14px;
+	background: #000000;
+	box-sizing: border-box; 
+	padding: 15px 24px;
+	text-align: center;
+	transition: background 0.3s;
+}
+
+.cookieConsentContainer .cookieButton a:hover { 
+	cursor: pointer;
+	background: #3E9B67;
+}
+
+@media (max-width: 980px) {
+	.cookieConsentContainer {
+		bottom: 0px !important;
+		left: 0px !important;
+		width: 100%  !important;
+	}
+}
+
+p {
+	color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
